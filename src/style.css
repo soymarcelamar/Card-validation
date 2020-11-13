@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+:root {
+  --font-family: "Poiret One", cursive;
+  --color-main: #52d29c;
+  --color-font: #efefef;
+  --color-second: #f8f8f8;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--color-main);
+  height: 620px;
+  animation-name: introViewChange;
+  animation-delay: 3s;
+  animation-duration: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes introViewChange {
+  from {
+    background-color: var(--color-main);
+  }
+  to {
+    background-color: var(--color-second);
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+  align-content: center;
+}
+
+.header-image {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  animation-name: headerImage;
+  animation-delay: 3s;
+  animation-duration: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  height: 0;
+}
+
+@keyframes headerImage {
+  from {
+    height: 0;
+  }
+  to {
+    height: 58px;
+  }
+}
+
+.header-text {
+  display: flex;
+  color: var(--color-font);
+  font-size: 48px;
+  font-family: var(--font-family);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  flex-direction: column;
+  text-align: center;
+  animation-name: headerChange;
+  animation-delay: 3s;
+  animation-duration: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes headerChange {
+  from {
+    margin-top: 0;
+    font-size: 48px;
+    color: var(--color-font);
+  }
+  to {
+    margin-top: -120px;
+    font-size: 28px;
+    color: var(--color-main);
+  }
+}
+
+.image-intro {
+  display: flex;
+  animation-name: introImageChange;
+  animation-delay: 3s;
+  animation-duration: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes introImageChange {
+  from {
+    height: auto;
+  }
+  to {
+    height: 0;
+  }
+}
+
+.main-view {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  animation-name: displayFooter;
+  animation-delay: 3s;
+  animation-duration: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  height: 0;
+}
+
+@keyframes displayFooter {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 70px;
+  }
+}
+
+.text-footer .img-footer {
+  display: flex;
+  display: flex;
+  animation-name: displayFooter;
+  animation-delay: 3s;
+  animation-duration: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  height: 0;
+}
+
+@keyframes displayFooter {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 70px;
+  }
+}
