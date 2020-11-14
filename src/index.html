@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="assets/image/tarjeta.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -39,22 +44,34 @@
           <img
             src="assets/image/tarjetaMain.png"
             alt="Ejemplo de tarjeta bancaria para identificar el numero de identificacion"
+            class="img-main"
           />
+        </div>
+        <div>
+          <p class="heading-card">Digita el número de tu tarjeta bancaria</p>
+        </div>
+        <div>
+          <input
+            type="text"
+            class="text-number"
+            placeholder="5512 0748 7041 7602"
+          />
+        </div>
+        <div>
+          <button class="submit">Validar</button>
         </div>
       </div>
     </main>
     <footer>
       <div id="footer" class="footer">
-        <div>
-          <div class="text-footer">Todos los derechos reservados ©</div>
-          <div class="img-footer">
-            <a href="https://github.com/soymarcelamar/Card-validation">
-              <img
-                src="assets/image/footer.png"
-                alt="GitHub Logo para acceder al repositorio del proyecto"
-              />
-            </a>
-          </div>
+        <div class="text-footer">Todos los derechos reservados ©</div>
+        <div class="img-footer">
+          <a href="https://github.com/soymarcelamar/Card-validation">
+            <img
+              src="assets/image/footer.png"
+              alt="GitHub Logo para acceder al repositorio del proyecto"
+            />
+          </a>
         </div>
       </div>
     </footer>
