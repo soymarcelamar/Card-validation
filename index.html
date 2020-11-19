@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Validación de tarjeta</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/image/tarjeta.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="header" class="header">
+        <div>
+          <img
+            src="assets/image/tarjetaHeader.png"
+            alt="Tarjeta bancaria, logo de la aplicacion"
+            class="header-image"
+          />
+        </div>
+        <div id="headerText" class="header-text">ClickPay</div>
+      </div>
+    </header>
+    <main>
+      <div id="introView" class="intro-view" onchange="introViewChange()">
+        <div class="image-intro">
+          <img
+            src="assets/image/intro.png"
+            alt="Mujer sosteniendo tarjeta bancaria"
+          />
+        </div>
+      </div>
+      <div id="mainView" class="main-view">
+        <div>
+          <img
+            src="assets/image/tarjetaMain.png"
+            alt="Ejemplo de tarjeta bancaria para identificar el numero de identificacion"
+            class="img-main"
+          />
+        </div>
+        <div>
+          <p class="heading-card">Digita el número de tu tarjeta bancaria</p>
+        </div>
+        <div>
+          <input
+            type="text"
+            id="text"
+            class="text-number"
+            placeholder="5512 0748 7041 7602"
+          />
+        </div>
+        <div>
+          <button id="submitButton" class="submit">Validar</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="footer" class="footer">
+        <div class="text-footer">Todos los derechos reservados ©</div>
+        <div class="img-footer">
+          <a href="https://github.com/soymarcelamar/Card-validation">
+            <img
+              src="assets/image/footer.png"
+              alt="GitHub Logo para acceder al repositorio del proyecto"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

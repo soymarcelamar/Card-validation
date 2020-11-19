@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+:root {
+  --font-family: "Poiret One", cursive;
+  --font-second: "Questrial", sans-serif;
+  --color-main: #52d29c;
+  --color-font: #efefef;
+  --color-second: #f8f8f8;
+  --input-placeholder: #cccccc;
+  --color-input: #110f0f;
+  --background-input: #ffffff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--color-main);
+  height: 620px;
+  animation-name: introViewChange;
+  animation-delay: 3s;
+  animation-duration: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+@keyframes introViewChange {
+  from {
+    background-color: var(--color-main);
+  }
+  to {
+    background-color: var(--color-second);
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+  align-content: center;
+}
+
+.header-image {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  animation-name: headerImage;
+  animation-delay: 3s;
+  animation-duration: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  height: 0;
+  margin: 5px 25px 0 -25px;
+}
+
+@keyframes headerImage {
+  from {
+    height: 0;
+  }
+  to {
+    height: 58px;
+  }
+}
+
+.header-text {
+  display: flex;
+  color: var(--color-font);
+  font-size: 48px;
+  font-family: var(--font-family);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  flex-direction: column;
+  text-align: center;
+  animation-name: headerChange;
+  animation-delay: 3s;
+  animation-duration: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes headerChange {
+  from {
+    font-size: 48px;
+    color: var(--color-font);
+    margin-top: 0;
+  }
+  to {
+    font-size: 28px;
+    color: var(--color-main);
+    margin-top: 10px;
+  }
+}
+
+.image-intro {
+  display: flex;
+  animation-name: introImageChange;
+  animation-delay: 3s;
+  animation-duration: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes introImageChange {
+  from {
+    height: auto;
+  }
+  to {
+    height: 0;
+  }
+}
+
+.main-view {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  animation-name: mainScreen;
+  animation-delay: 3s;
+  animation-duration: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  height: 0;
+  visibility: hidden;
+}
+
+@keyframes mainScreen {
+  from {
+    visibility: hidden;
+    height: 0;
+  }
+  to {
+    visibility: visible;
+    height: auto;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  background-color: var(--color-main);
+  border-radius: 50px 50px 0px 0px;
+  height: 0;
+  width: 360px;
+  margin-top: 19px;
+  margin-bottom: -125px;
+  animation-name: displayFooter;
+  animation-delay: 3s;
+  animation-duration: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes displayFooter {
+  from {
+    height: 0;
+  }
+  to {
+    height: 38px;
+  }
+}
+
+.text-footer {
+  display: flex;
+  visibility: hidden;
+  font-size: 15px;
+  font-family: var(--font-second);
+  animation-name: displayElementsFooter;
+  animation-delay: 3s;
+  animation-duration: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  margin-top: 10px;
+}
+
+@keyframes displayElementsFooter {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
+.img-footer {
+  display: none;
+}
+.heading-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 251px;
+  color: var(--color-input);
+  font-family: var(--font-second);
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.text-number {
+  display: flex;
+  width: 251px;
+  height: 38px;
+  background: var(--background-input);
+  border: 2px solid var(--color-main);
+  box-sizing: border-box;
+  border-radius: 50px;
+  color: var(--color-input);
+}
+
+.text-number,
+input ::placeholder {
+  padding-left: 35px;
+  color: var(--color-input);
+  font-family: var(--font-second);
+  font-size: 18px;
+}
+
+.submit {
+  display: flex;
+  width: 251px;
+  height: 38px;
+  background-color: var(--color-main);
+  border: 2px solid var(--color-main);
+  box-sizing: border-box;
+  border-radius: 50px;
+  flex-direction: column;
+  text-align: center;
+  font-family: var(--font-second);
+  font-size: 18px;
+  margin-top: 50px;
+  padding-top: 8px;
+}
